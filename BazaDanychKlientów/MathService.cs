@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BazaDanychKlientów
 {
-    class Kalkulator
+    public class Kalkulator
     {
         public static double Add(double number1, double number2)
         {
