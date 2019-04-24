@@ -28,6 +28,12 @@ namespace BazaDanychKlientów
             }
      
         }
+
+        public bool AddItem(string customerName, string customerLastName, string customerNationality, string customerAge, string customerPhone, string customerAddress)
+        {
+            throw new NotImplementedException();
+        }
+
         public bool AddCustomer(string CustomerName, string CustomerLastName, string CustomerAge, string CustomerNationality, string CustomerPhone, string CustomerAddress)
         {
             if (CustomerName.Length == 0 || CustomerLastName.Length == 0 || CustomerAge.Length == 0 || CustomerNationality.Length == 0 || CustomerPhone.Length == 0 || CustomerAddress.Length == 0) {
@@ -79,7 +85,28 @@ namespace BazaDanychKlientów
 
         private void button5_Click(object sender, EventArgs e)
         {
+            try
+            {
+                string toShow = customerList.SelectedItem.ToString();
 
+                for(int i = 0; i < customersList.Count; i++)
+                {
+                    if ((customersList[i].Name + ' ' + customersList[i].LastName) == toShow)
+                    {
+                        Form Form2 = new Form2(customersList[i]);
+                        Form2.Show();
+                    }
+                }
+            }
+            catch(NullReferenceException)
+            {
+                string errorTitle = "Wystąpił błąd";
+                string errorMessage = "Error";
+                MessageBoxButtons messageBoxButtons = MessageBoxButtons.OK;
+
+                DialogResult result;
+                result = MessageBox.Show(errorTitle, errorMessage, messageBoxButtons);
+            }
         }
 
 
@@ -145,7 +172,7 @@ namespace BazaDanychKlientów
 
                         for (int j = 0; j < customersList.Count; j++)
                         {
-                            if (customersList[j].Name == customer)
+                            if ((customersList[j].Name + ' ' + customersList[j].LastName) == customer)
                                 customersList.RemoveAt(j);
                         }
                     }

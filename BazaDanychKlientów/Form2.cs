@@ -12,9 +12,31 @@ namespace BazaDanychKlientów
 {
     public partial class Form2 : Form
     {
-        public Form2()
+        private Customer selectedCustomer;
+        public Form2(Customer customer)
         {
+            selectedCustomer = customer;
             InitializeComponent();
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+            nameLabel.Text = selectedCustomer.Name;
+            LastName.Text = selectedCustomer.LastName;
+            Nationality.Text = selectedCustomer.Nationality;
+            Age.Text = selectedCustomer.Age;
+            PhoneNumber.Text = selectedCustomer.Phone;
+            Address.Text = selectedCustomer.Address;
+        }
+
+        private void customerName_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void customerAge_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
