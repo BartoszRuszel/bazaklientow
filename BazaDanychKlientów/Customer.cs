@@ -6,16 +6,8 @@ using System.Threading.Tasks;
 
 namespace BazaDanychKlientów
 {
-    class Customer
+    public class Customer
     {
-       
-        private string CustomerName;
-        private string CustomerLastName;
-        private string CustomerNationality;
-        private string CustomerAddress;
-        private string CustomerPhone;
-        private string CustomerAge;
-
         public Customer( string CustomerName, string CustomerLastName, string CustomerAge ,string CustomerNationality, string CustomerPhone, string CustomerAddress)
         {
             
@@ -28,12 +20,12 @@ namespace BazaDanychKlientów
         }
 
         
-        public string Name { get { return CustomerName; } set { CustomerName = value; } }
-        public string LastName { get { return CustomerLastName; } set { CustomerLastName = value; } }
-        public string Age { get { return CustomerAge; } set {  CustomerAge= value; } }
-        public string Nationality { get { return CustomerNationality; } set { CustomerNationality = value; } }
-        public string Phone { get { return CustomerPhone; } set { CustomerPhone = value; } }
-        public string Address { get { return CustomerAddress; } set { CustomerAddress = value; } }
+        public string Name { get; set; }
+        public string LastName { get; set; }
+        public string Age { get; set; }
+        public string Nationality { get; set; }
+        public string Phone { get; set; }
+        public string Address { get; set; }
     }
 }
 
