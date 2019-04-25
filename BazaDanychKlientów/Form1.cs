@@ -19,7 +19,7 @@ namespace BazaDanychKlientów
         {
             customersList.Add(new Customer("Bartosz", "Ruszel", "22", "Polska", "798545", "Kraków"));
             customersList.Add(new Customer("Dominik", "Raczkowski", "22", "Polska", "2328545", "Kraków"));
-            customersList.Add(new Customer("Krystian", "kobus", "23", "Polska", "798545", "Kraków"));
+            customersList.Add(new Customer("Krystian", "Kobus", "23", "Polska", "798545", "Kraków"));
             InitializeComponent();
             button4.Enabled = false; button2.Enabled = false;
             for (int i = 0; i < customersList.Count; i++)
@@ -101,11 +101,11 @@ namespace BazaDanychKlientów
             catch(NullReferenceException)
             {
                 string errorTitle = "Wystąpił błąd";
-                string errorMessage = "Error";
+                string errorMessage = "Aby włączyć podgląd należy wybrać klienta";
                 MessageBoxButtons messageBoxButtons = MessageBoxButtons.OK;
 
                 DialogResult result;
-                result = MessageBox.Show(errorTitle, errorMessage, messageBoxButtons);
+                result = MessageBox.Show(errorMessage, errorTitle, messageBoxButtons);
             }
         }
 
@@ -181,7 +181,7 @@ namespace BazaDanychKlientów
             catch (NullReferenceException)
             {
                 string errorTitle = "Wystąpił błąd!";
-                string errorMessage = "Przed usunięciem należy wybrać Klienta z listy";
+                string errorMessage = "Aby usunąc klienta należy wybrać go z listy";
                 MessageBoxButtons messageBoxButtons = MessageBoxButtons.OK;
                 DialogResult result;
                 result = MessageBox.Show(errorMessage, errorTitle, messageBoxButtons);
@@ -198,7 +198,7 @@ namespace BazaDanychKlientów
             catch (NullReferenceException)
             {
                 string errorTitle = "Wystąpił błąd!";
-                string errorMessage = "Przed edycją musisz wybrać klienta z listy";
+                string errorMessage = "Aby dokonać edycji musisz wybrać klienta z listy";
                 MessageBoxButtons messageBoxButtons = MessageBoxButtons.OK;
 
                 DialogResult result;

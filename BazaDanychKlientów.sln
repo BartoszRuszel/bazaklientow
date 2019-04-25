@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BazaDanychKlientówTesty", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathServiceTests", "MathServiceTests\MathServiceTests.csproj", "{50DE349D-7E86-48C3-8DDE-151CFA064626}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BazaDanychKlientowTestySelenium", "BazaDanychKlientowTestySelenium\BazaDanychKlientowTestySelenium.csproj", "{6C668F99-F159-473C-84DB-84F22CBC49F1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{50DE349D-7E86-48C3-8DDE-151CFA064626}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50DE349D-7E86-48C3-8DDE-151CFA064626}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{50DE349D-7E86-48C3-8DDE-151CFA064626}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C668F99-F159-473C-84DB-84F22CBC49F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C668F99-F159-473C-84DB-84F22CBC49F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C668F99-F159-473C-84DB-84F22CBC49F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C668F99-F159-473C-84DB-84F22CBC49F1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

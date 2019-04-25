@@ -5,12 +5,12 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{50DE349D-7E86-48C3-8DDE-151CFA064626}</ProjectGuid>
+    <ProjectGuid>{6C668F99-F159-473C-84DB-84F22CBC49F1}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MathServiceTests</RootNamespace>
-    <AssemblyName>MathServiceTests</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <RootNamespace>BazaDanychKlientowTestySelenium</RootNamespace>
+    <AssemblyName>BazaDanychKlientowTestySelenium</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">15.0</VisualStudioVersion>
@@ -62,16 +62,24 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="SeleniumTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BazaDanychKlientówTesty\BazaDanychKlientówTesty.csproj">
+      <Project>{46ba7413-35b7-4ae1-81fd-92cfd84bfdee}</Project>
+      <Name>BazaDanychKlientówTesty</Name>
+    </ProjectReference>
     <ProjectReference Include="..\BazaDanychKlientów\BazaDanychKlientów.csproj">
       <Project>{efa82049-0f69-457e-8b8f-c13887806447}</Project>
       <Name>BazaDanychKlientów</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MathServiceTests\MathServiceTests.csproj">
+      <Project>{50de349d-7e86-48c3-8dde-151cfa064626}</Project>
+      <Name>MathServiceTests</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
