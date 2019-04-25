@@ -110,7 +110,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.AccessibleName = "productName";
+            this.textBox1.AccessibleName = "customerName";
             this.textBox1.Location = new System.Drawing.Point(292, 65);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(168, 20);
@@ -119,6 +119,7 @@
             // 
             // textBox6
             // 
+            this.textBox6.AccessibleName = "customerPhone";
             this.textBox6.Location = new System.Drawing.Point(511, 180);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(168, 20);
@@ -126,6 +127,7 @@
             // 
             // textBox7
             // 
+            this.textBox7.AccessibleName = "customerAddress";
             this.textBox7.Location = new System.Drawing.Point(292, 180);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(168, 20);
@@ -133,6 +135,7 @@
             // 
             // button1
             // 
+            this.button1.AccessibleName = "removeBtn";
             this.button1.Location = new System.Drawing.Point(195, 415);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
@@ -143,6 +146,7 @@
             // 
             // button2
             // 
+            this.button2.AccessibleName = "saveBtn";
             this.button2.Location = new System.Drawing.Point(604, 228);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
@@ -153,6 +157,7 @@
             // 
             // button3
             // 
+            this.button3.AccessibleName = "addCustomer";
             this.button3.Location = new System.Drawing.Point(292, 228);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
@@ -163,6 +168,7 @@
             // 
             // show
             // 
+            this.show.AccessibleName = "displayBtn";
             this.show.Location = new System.Drawing.Point(12, 415);
             this.show.Name = "show";
             this.show.Size = new System.Drawing.Size(75, 23);
@@ -212,6 +218,7 @@
             // 
             // textBox3
             // 
+            this.textBox3.AccessibleName = "customerNationality";
             this.textBox3.Location = new System.Drawing.Point(511, 123);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(168, 20);
@@ -219,6 +226,7 @@
             // 
             // textBox2
             // 
+            this.textBox2.AccessibleName = "customerAge";
             this.textBox2.Location = new System.Drawing.Point(292, 123);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(168, 20);
@@ -235,6 +243,7 @@
             // 
             // textBox4
             // 
+            this.textBox4.AccessibleName = "customerLastName";
             this.textBox4.Location = new System.Drawing.Point(511, 64);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(168, 20);
@@ -242,6 +251,7 @@
             // 
             // button5
             // 
+            this.button5.AccessibleName = "editBtn";
             this.button5.Location = new System.Drawing.Point(103, 415);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 23);
@@ -252,6 +262,7 @@
             // 
             // button4
             // 
+            this.button4.AccessibleName = "cancelBtn";
             this.button4.Location = new System.Drawing.Point(603, 415);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 23);
